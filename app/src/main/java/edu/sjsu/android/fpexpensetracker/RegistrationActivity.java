@@ -14,38 +14,31 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import edu.sjsu.android.fpexpensetracker.databinding.ActivityMainBinding;
-
-public class MainActivity extends AppCompatActivity {
+public class RegistrationActivity extends AppCompatActivity {
 
     private EditText mEmail;
     private EditText mPass;
-    private Button btnLogin;
-    private TextView mForgetPassword;
-    private TextView mSignupHere;
-    private ActivityMainBinding binding;
-
+    private Button btnReg;
+    private TextView mSignin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
         EdgeToEdge.enable(this);
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_registration);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        loginDetails();
+        registration();
     }
-    private void loginDetails(){
-        mEmail = findViewById(R.id.email_login);
-        mPass = findViewById(R.id.password_login);
-        btnLogin = findViewById(R.id.btn_login);
-        mForgetPassword = findViewById(R.id.forget_password);
-        mSignupHere = findViewById(R.id.signup_reg);
+    private void registration(){
+        mEmail = findViewById(R.id.email_reg);
+        mPass = findViewById(R.id.password_reg);
+        btnReg = findViewById(R.id.btn_reg);
+        mSignin = findViewById(R.id.signin_here);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email =mEmail.getText().toString().trim();
@@ -59,25 +52,15 @@ public class MainActivity extends AppCompatActivity {
                 if(TextUtils.isEmpty(pass))
                 {
                     mPass.setError("Password Required");
-                    return;
                 }
             }
         });
-        // Sends User to the Register Screen
-        mSignupHere.setOnClickListener(new View.OnClickListener() {
+
+        mSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),RegistrationActivity.class));
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
         });
-        //Sends User to the Reset the Password
-        mForgetPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ResetActivity.class));
-            }
-        });
-
-
     }
 }

@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Registration"
                 android:textColor="@color/white"
                 android:textAppearance="?textAppearanceBodyLarge"
                 android:gravity="center">
@@ -32,7 +32,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/email_login"
+                android:id="@+id/email_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -45,7 +45,7 @@
             </EditText>
 
             <EditText
-                android:id="@+id/password_login"
+                android:id="@+id/password_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -61,10 +61,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Login"
+                android:text="Registration"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:background="@drawable/edittext_background"
-                android:id="@+id/btn_login">
+                android:id="@+id/btn_reg">
 
             </Button>
 
@@ -72,33 +72,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Forgot Password?"
+                android:text="Already have an account?  Login Here"
                 android:padding="5dp"
-                android:id="@+id/forget_password"
+                android:id="@+id/signin_here"
                 android:textColor="@color/white"
                 >
 
             </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="SignUp"
-                android:padding="5dp"
-                android:id="@+id/signup_reg"
-                android:textColor="@color/white"
-                >
 
-            </TextView>
 
 
         </LinearLayout>
-
     </ScrollView>
-
-
-
-
 
 </LinearLayout>
