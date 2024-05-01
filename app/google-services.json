@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "770501491645",
+    "project_id": "expense-manager-59c01",
+    "storage_bucket": "expense-manager-59c01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770501491645:android:e04fd7b72113142ca870d4",
+        "android_client_info": {
+          "package_name": "edu.sjsu.android.fpexpensetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN_MYMCgIPfl-n5TzIBJWhDIRHP1yLHW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
