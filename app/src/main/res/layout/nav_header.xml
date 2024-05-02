@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical"
     app:theme="@style/Base.Theme.FPExpenseTracker"
-    android:background="@color/nav_header">
+    android:background="@color/toolbar_color">
 
     <TextView
         android:layout_width="match_parent"
