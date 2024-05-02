@@ -2,4 +2,6 @@
     <string name="app_name">FP Expense Tracker</string>
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="register">Register</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
 </resources>
