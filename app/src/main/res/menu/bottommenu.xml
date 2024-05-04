@@ -3,21 +3,15 @@
 
     <item
         android:id="@+id/dashboard"
-        android:visible="true"
-        android:enabled="true"
         android:title="DashBoard"
         android:icon="@drawable/dashboard"/>
     <item
         android:id="@+id/income"
-        android:visible="true"
-        android:enabled="true"
         android:title="Income"
         android:icon="@drawable/income"
         />
     <item
         android:id="@+id/expense"
-        android:visible="true"
-        android:enabled="true"
         android:title="Expense"
         android:icon="@drawable/expense"/>
 

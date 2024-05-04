@@ -44,6 +44,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         bottomNavigationView=findViewById(R.id.bottomNavigationbar);
+
+        //TODO: This code is to remove the weird padding issue but leaves a funky line at the top
+        bottomNavigationView.setOnApplyWindowInsetsListener(null);
+        bottomNavigationView.setPadding(0,0,0,0);
+
         frameLayout=findViewById(R.id.main_frame);
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
 
