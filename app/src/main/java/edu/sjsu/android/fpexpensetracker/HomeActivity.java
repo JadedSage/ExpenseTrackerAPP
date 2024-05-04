@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
         Toolbar toolbar = findViewById(R.id.my_toolbar);
-        toolbar.setTitle("Expense Manager");
+        toolbar.setTitle("Clover");
         setSupportActionBar(toolbar);
 
         bottomNavigationView=findViewById(R.id.bottomNavigationbar);
