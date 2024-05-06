@@ -67,4 +67,6 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
     implementation(libs.firebase.auth)
+    implementation ("com.firebaseui:firebase-ui-database:8.0.0")
+
 }
