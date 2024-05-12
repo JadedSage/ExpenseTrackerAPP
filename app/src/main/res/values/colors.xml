@@ -5,9 +5,9 @@
     <color name="toolbar_color">#393C36</color>
     <color name="nav_header">#B8B6B6</color>
 
-    <color name="dashboard_color">#03A9F4</color>
-    <color name="income_color">#2BE374</color>
-    <color name="expense_color">#D6203C</color>
+    <color name="dashboard_color">#0F4259</color>
+    <color name="income_color">#206E3F</color>
+    <color name="expense_color">#7C1525</color>
     <color name="date_color">#5866E3</color>
     <color name="expense_amount">#DD1941</color>
 </resources>

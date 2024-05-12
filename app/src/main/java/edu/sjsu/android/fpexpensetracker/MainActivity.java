@@ -37,9 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
-    //TODO: We can prob remove this
     private ActivityMainBinding binding;
-
 
 
     @Override
