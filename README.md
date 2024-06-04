@@ -1,5 +1,4 @@
 # Clover
-This is our final project for 175 Mobile Device Development
 
 ## Why?:
 Ever feel that your wallet is always empty. Maybe you are down on your luck and need something to put you back on track. With Clover you can make smarter choices with your finances.
